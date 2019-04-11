@@ -1,0 +1,10 @@
+cluster:
+  name: travis-test
+
+pipeline:
+  build:
+    image: golang
+    commands:
+      - go get
+      - go build
+      - go test
